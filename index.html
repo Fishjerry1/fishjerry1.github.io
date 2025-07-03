@@ -1,0 +1,435 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>My Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.posts {
+					width: 100%;
+					margin: 0 auto;
+			}
+			
+.story-grid {
+	display: grid;
+grid-template-columns: repeat(2, minmax(460px, 1fr));
+gap: 20px;
+justify-content: left;
+
+@media (max-width: 600px) {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: center;
+}
+}
+
+.story-item {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ensures it takes full width of the grid cell */
+}
+			
+			.story-content h2 a {
+					text-decoration: none;
+					color: #333;
+			}
+			
+			.image.fit video {
+					width: 100%;
+					height: "225";
+					border-radius: 8px;
+			}
+			
+			footer {
+					text-align: center;
+					margin-top: 10px;
+			}
+			
+			.toggle-button {
+					display: inline-block;
+					padding: 8px 16px;
+					background-color: #333;
+					color: #fff;
+					text-decoration: none;
+					border-radius: 4px;
+					transition: background-color 0.3s ease;
+			}
+			
+			.toggle-button:hover {
+					background-color: #555;
+			}
+			</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Welcome<br />
+							Explore the Work and Projects of Bassey Jeremiah Usang!</h1>
+						<p>| Database Management| Quantitative Data Analysis | Qualitative Data Analysis | Geospatial Analytics | Data Collections tools development <br/> 
+						PostgreSQL | DHIS2 | Python | R | Excel | STATA | SPSS | PowerBI | Tableau | Atlas.ti | Nvivo | QGIS | ArcGIS </p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Bassey Jeremiah Usang</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="about.html">About Me</a></li>
+							<li><a href="resume.html">Resume</a></li>
+							<li><a href="projects.html">Projects</a></li>
+							<li><a href="blog.html">Blog Page</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+						<ul class="icons alt">
+							<li><a href="https://github.com/fishjerry1" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/bjusang" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li>
+								<a href="https://www.spatialnode.net/fishjerry2022">
+									<img src="assets/spatialnode.png" alt="Spatialnode" style="width: 16px; height: 16px; border-radius: 50%;">	
+								</a>
+							</li>
+							<li>
+								<a href="fishpraise23@gmail.com" class="icon solid alt fa-envelope">
+									<span class="label">Email</span>
+								</a>
+							</li>
+							<li><a href="tel:+2348065651202" class="icon solid alt fa-phone"><span class="label">Call me (best on mobile)</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<span class="date" id="currentDate"></span>
+<script>
+    const dateElement = document.getElementById("currentDate");
+    const today = new Date().toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+    });
+    dateElement.textContent = today;
+</script>
+									<h2><a href="#">Turning Numbers into Narratives<br />
+										Using advanced analytics to tell stories that shape impactful solutions.</a></h2>
+									<p>Discover how I leverage data analytics tools to drive impactful solutions.<br />
+										Discover how I turn raw data to real Impacts.<br />
+										Discover how I am trying to unlock potentials through data-driven solutions and innovation.</p>
+									</header>
+									<a href="#" class="image main">
+										<img src="basseyjeremiahusang.jpg" alt="Bassey Jeremiah Usang" style="width: 300px; height: auto; border-radius: 50%; display: block; margin: 0 auto;" />
+									</a>
+									<ul class="actions special">
+										<li><a href="BasseyJeremiahUsang_resume.pdf" class="button large" target="_blank">View My Resume</a></li>
+									</ul>
+							</article>
+
+<!-- Posts -->
+<section class="posts">
+  <div class="story-grid">
+
+    <!-- Story Item 1 -->
+    <div class="story-item">
+      <article>
+        <header>
+          <span class="date">June 6, 2025</span>
+          <div class="story-content">
+            <h2>
+              GEOANALTECH Strategic Planning Meeting<br/>
+              <span class="subtitle">
+                Driving “Tech Education for All”—SWOT, Roadmaps & Next Steps
+              </span>
+            </h2>
+          </div>
+        </header>
+        <!-- Image or Video: replace with your slide deck screenshot or meeting photo -->
+        <div class="media fit">
+          <img src="images/Leadership Meeting Geoanaltech (1).jpg" alt="Strategic Planning Meeting">
+        </div>
+        <footer>
+          <ul class="actions special">
+            <li><button onclick="toggleStory1()" id="viewFullStoryButton1" class="button">View Full Story</button></li>
+          </ul>
+          <div id="fullStory1" style="display:none">
+            <p>On June 6, 2025, I led GEOANALTECH’s annual Strategic Planning Meeting—bringing together senior advisors and technical leads to refine our 2025–2026 roadmap. I facilitated a thorough SWOT analysis, guided breakout groups on program expansion, and co‑authored the final strategic brief to launch new training hubs across Nigeria. This session solidified commitments to our “Tech Education for All” vision and identified key partnerships to scale our impact.</p>
+          </div>
+        </footer>
+      </article>
+    </div>
+
+    <!-- Story Item 2 -->
+    <div class="story-item">
+      <article>
+        <header>
+          <span class="date">January 18, 2024</span>
+          <div class="story-content">
+            <h2>
+              NOMIS 3.0 Rollout in Kano<br/>
+              <span class="subtitle">
+                Empowering 17 Facilities with Real‑Time OVC Data
+              </span>
+            </h2>
+          </div>
+        </header>
+        <!-- Image or Video: system training screenshot or class photo -->
+        <div class="media fit">
+          <img src="images/Nomis 3 Rollout in Kano (3).jpg" alt="NOMIS 3.0 Training">
+        </div>
+        <footer>
+          <ul class="actions special">
+            <li><button onclick="toggleStory2()" id="viewFullStoryButton2" class="button">View Full Story</button></li>
+          </ul>
+          <div id="fullStory2" style="display:none">
+            <p>As part of the Technical Lead Team for ICHSSA 3, I supported the NOMIS 3.0 rollout in Kano on January 18, 2024. I designed hands‑on sessions for 50+ Ministry and facility M&E staff—covering system setup, user roles, and live data validation. Within two weeks, 17 facilities submitted accurate OVC data, enabling timely program adjustments for vulnerable children across the state.</p>
+          </div>
+        </footer>
+      </article>
+    </div>
+
+    <!-- Story Item 3 -->
+    <div class="story-item">
+      <article>
+        <header>
+          <span class="date">September 10–16, 2024</span>
+          <div class="story-content">
+            <h2>
+              Bauchi SACA M&E Workshop<br/>
+              <span class="subtitle">
+                Advanced DHIS2, QGIS & Power BI for HIV Monitoring
+              </span>
+            </h2>
+          </div>
+        </header>
+        <!-- Image or Video: workshop group photo -->
+        <div class="media fit">
+          <img src="images/Training SACA Bauchi (2).jpg" alt="Bauchi SACA Workshop">
+        </div>
+        <footer>
+          <ul class="actions special">
+            <li><button onclick="toggleStory3()" id="viewFullStoryButton3" class="button">View Full Story</button></li>
+          </ul>
+          <div id="fullStory3" style="display:none">
+            <p>During a week‑long workshop for Bauchi’s SACA M&E officers, I co‑facilitated labs on DHIS2 dashboard design, geospatial mapping in QGIS, and dynamic reporting with Power BI. Participants mastered tracking HIV testing and ART adherence—boosting data timeliness by 40% across the state.</p>
+          </div>
+        </footer>
+      </article>
+    </div>
+
+    <!-- Story Item 4 -->
+    <div class="story-item">
+      <article>
+        <header>
+          <span class="date">January 15, 2025</span>
+          <div class="story-content">
+            <h2>
+              USAID National DQA Supervision<br/>
+              <span class="subtitle">
+                Field Coordination Across 6 States & Protocol Development
+              </span>
+            </h2>
+          </div>
+        </header>
+        <!-- Image or Video: field team in action -->
+        <div class="media fit">
+          <img src="images/USAID DQA Supervisor (5).jpg" alt="National DQA Supervision">
+        </div>
+        <footer>
+          <ul class="actions special">
+            <li><button onclick="toggleStory4()" id="viewFullStoryButton4" class="button">View Full Story</button></li>
+          </ul>
+          <div id="fullStory4" style="display:none">
+            <p>Leading the USAID National DQA on January 15, 2025, I developed protocols, coordinated teams across 5 Local Government Areas in Jigawa State, and synthesized findings into a national report. Our recommended corrective actions reduced data discrepancies by 25%, strengthening the fidelity of OVC service metrics nationwide.</p>
+          </div>
+        </footer>
+      </article>
+    </div>
+
+    <!-- Story Item 5 -->
+    <div class="story-item">
+      <article>
+        <header>
+          <span class="date">September 2024</span>
+          <div class="story-content">
+            <h2>
+              Yobe State Technical Support<br/>
+              <span class="subtitle">
+                Database Audits & Pivot‑Table Dashboards
+              </span>
+            </h2>
+          </div>
+        </header>
+        <!-- Image or Video: system audit screenshot -->
+        <div class="media fit">
+          <img src="images/Yobe STS (1).jpg" alt="Yobe Technical Support">
+        </div>
+        <footer>
+          <ul class="actions special">
+            <li><button onclick="toggleStory5()" id="viewFullStoryButton5" class="button">View Full Story</button></li>
+          </ul>
+          <div id="fullStory5" style="display:none">
+            <p>In September 2024, I provided high‑level technical support to Yobe State M&E—optimizing database schemas, auditing data pipelines, and building Power BI templates. Our work enabled final reporting two weeks ahead of schedule, safeguarding funding continuity.</p>
+          </div>
+        </footer>
+      </article>
+    </div>
+
+<!-- Toggle Script -->
+<script>
+function toggleStory10() {
+const fullStory = document.getElementById("fullStory10");
+const button = document.getElementById("viewFullStoryButton10");
+if (fullStory.style.display === "none" || fullStory.style.display === "") {
+fullStory.style.display = "block";
+button.textContent = "Hide Full Story";
+} else {
+fullStory.style.display = "none";
+button.textContent = "View Full Story";
+}
+}
+</script>
+</footer>
+</article>
+</div>
+					</section>
+
+						<!-- Footer -->
+						
+						<footer>
+							<!-- Pagination -->
+							<div class="pagination">
+									<a href="#" id="prevBtn" class="previous">Prev</a>
+									<a href="index.html" class="page" id="page1">1</a>
+									<a href="page2.html" class="page" id="page2">2</a>
+									<a href="page3.html" class="page" id="page3">3</a>
+									<span class="extra">&hellip;</span>
+									<a href="page8.html" class="page" id="page8">8</a>
+									<a href="page9.html" class="page" id="page9">9</a>
+									<a href="page10.html" class="page" id="page10">10</a>
+									<a href="#" id="nextBtn" class="next">Next</a>
+							</div>
+					</footer>
+					</div>
+
+					<!-- Script -->
+<script>
+	// Get the current page number from the URL
+	const currentPage = parseInt(window.location.pathname.match(/page(\d+)\.html/)?.[1] || 1);
+
+	// Get the Prev and Next buttons
+	const prevBtn = document.getElementById("prevBtn");
+	const nextBtn = document.getElementById("nextBtn");
+
+	// Set the Prev button link
+	if (currentPage > 1) {
+			const prevPage = currentPage === 2 ? "index.html" : `page${currentPage - 1}.html`;
+			prevBtn.href = prevPage;
+			prevBtn.classList.remove("disabled");
+	} else {
+			prevBtn.style.display = "none"; // Hide the Prev button on the first page
+	}
+
+	// Set the Next button link
+	if (currentPage < 10) {  // Adjust this number if you have more pages
+			const nextPage = `page${currentPage + 1}.html`;
+			nextBtn.href = nextPage;
+			nextBtn.classList.remove("disabled");
+	} else {
+			nextBtn.style.display = "none"; // Hide the Next button on the last page
+	}
+
+	// Highlight the active page number
+	const activePage = document.getElementById(`page${currentPage}`);
+	if (activePage) {
+			activePage.classList.add("active");
+	}
+</script>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<section>
+							<form action="https://formspree.io/f/mqapkjkd" method="POST">
+									<div class="fields" style="display: flex; flex-direction: column; gap: 10px;">
+											<div class="field" style="display: flex; flex-direction: column; align-items: flex-start;">
+													<label for="name" style="margin-bottom: 5px;">Name</label>
+													<input type="text" name="name" id="name" placeholder="Your Name" required style="width: 100%; padding: 8px;" />
+											</div>
+											<div class="field" style="display: flex; flex-direction: column; align-items: flex-start;">
+													<label for="email" style="margin-bottom: 5px;">Email</label>
+													<input type="email" name="email" id="email" placeholder="Your Email" required style="width: 100%; padding: 8px;" />
+											</div>
+											<div class="field" style="display: flex; flex-direction: column; align-items: flex-start;">
+													<label for="message" style="margin-bottom: 5px;">Message</label>
+													<textarea name="message" id="message" rows="3" placeholder="Your Message" required style="width: 100%; padding: 8px;"></textarea>
+											</div>
+									</div>
+									<ul class="actions" style="margin-top: 10px;">
+											<li><input type="submit" value="Send Message" style="padding: 8px 16px;" /></li>
+									</ul>
+							</form>
+					</section>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>Plot 739, Kubwa Extension II, Arab Road, Kubwa<br />
+								Abuja, Nigeria</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="tel:+2347031666261">(+234) 703-1666-261</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="mailto:seyiabolarin@hotmail.com">seyiabolarin@hotmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://github.com/seyiabolarin" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.linkedin.com/in/seyiabolarin" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li>
+										<a href="https://www.spatialnode.net/seyiabolarin" class="icon">
+											<img src="assets/spatialnode.png" alt="Spatialnode" style="width: 24px; height: 24px; border-radius: 50%; vertical-align: middle;">
+										</a>
+									</li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; seyiabolarin</li><li>Design: <a href="https://linkedin.com/in/seyiabolarin">LinkedIn</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
